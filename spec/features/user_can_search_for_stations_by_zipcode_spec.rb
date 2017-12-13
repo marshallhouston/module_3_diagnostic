@@ -22,6 +22,9 @@ describe "User can search by zip_code" do
           end
 
           # And the stations should be limited to Electric and Propane
+          expect(page).to have_content("ELEC")
+          expect(page).to_not have_content("BD")
+          expect(page).to_not have_content("HY")
 
           # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
           within first(".station-info") do
