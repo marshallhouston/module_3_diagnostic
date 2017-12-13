@@ -24,7 +24,13 @@ describe "User can search by zip_code" do
         # And the stations should be limited to Electric and Propane
 
         # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
-
+        within ".station-info" do
+          expect(page).to have_css('.station-name')
+          expect(page).to have_css('.station-address')
+          expect(page).to have_css('.station-fuel_types')
+          expect(page).to have_css('.station-distance')
+          expect(page).to have_css('.station-access_times')
+        end
       end
     end
   end
