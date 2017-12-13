@@ -10,7 +10,9 @@ class SearchController < ApplicationController
       faraday.params['limit'] = 10
       faraday.params['location'] = params[:q]
     end
-    parsed_stations = JSON.parse(request.body, symbolize_headers: true)
+
+    parsed_response = JSON.parse(request.body, symbolize_headers: true)
+    parsed_stations = parsed_response['fuel_stations']
 
     @stations = parsed_stations
   end
