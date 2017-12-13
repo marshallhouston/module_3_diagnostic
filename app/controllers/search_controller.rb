@@ -8,7 +8,7 @@ class SearchController < ApplicationController
       faraday.params['format'] = 'json'
       faraday.params['fuel_type'] = 'ELEC,LPG'
       faraday.params['limit'] = 10
-      faraday.params['location'] = params[:q]
+      faraday.params['location'] = params[:zip_code]
     end
 
     parsed_response = JSON.parse(request.body, symbolize_headers: true)
@@ -19,6 +19,12 @@ class SearchController < ApplicationController
     end
 
     @stations = stations
+  end
+
+  private
+
+  def strong_params
+    params.permit(:zip_code)
   end
 
 end

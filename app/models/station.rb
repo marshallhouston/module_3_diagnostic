@@ -13,5 +13,5 @@ class Station
     @distance = data[:distance]
     @access_times = data[:access_days_time]
   end
-  
+
 end

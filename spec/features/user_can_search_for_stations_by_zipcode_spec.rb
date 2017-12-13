@@ -9,12 +9,12 @@ describe "User can search by zip_code" do
         # When I visit "/"
         visit "/"
         # And I fill in the search form with 80203
-        fill_in 'q', with: "80203"
+        fill_in 'zip_code', with: "80203"
         # And I click "Locate"
         click_on "Locate"
         # Then I should be on page "/search" with parameters visible in the url
 
-        expect(current_path).to eq("/search?location=80203")
+        expect(current_url).to include('zip_code=80203')
 
         # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
         within ".stations" do
