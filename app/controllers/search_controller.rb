@@ -6,11 +6,10 @@ class SearchController < ApplicationController
       faraday.params['format'] = 'json'
       faraday.params['radius'] = '6'
       faraday.params['format'] = 'json'
-      faraday.params['fuel_type'] = ['ELEC','LPG']
+      faraday.params['fuel_type'] = 'ELEC,LPG'
       faraday.params['limit'] = 10
       faraday.params['location'] = params[:q]
     end
-
     parsed_stations = JSON.parse(request.body, symbolize_headers: true)
 
     @stations = parsed_stations
