@@ -15,8 +15,8 @@ describe "User can search by zip_code" do
         # Then I should be on page "/search" with parameters visible in the url
         expect(current_path).to eq("/search")
         # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
-        within "stations" do
-          expect( all('.name').count ).to eq(10)
+        within ".stations" do
+          expect( all('.station-name').count ).to eq(10)
         end
 
         # And the stations should be limited to Electric and Propane

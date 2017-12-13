@@ -1,0 +1,12 @@
+
+<div class="stations">
+  <% @stations.each do |station| %>
+  <div class="station-info">
+    <div class='station-name'><%= station.name %></div>
+    <div class='station-address'><%= station.address %></div>
+    <div class='station-fuel_types'><%= station.fuel_types %></div>
+    <div class='station-distance'><%= station.distance %></div>
+    <div class='station-access_times'><%= station.access_times %></div>
+  </div>
+  <% end %>
+</div>
