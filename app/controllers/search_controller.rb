@@ -2,13 +2,11 @@ class SearchController < ApplicationController
 
   def index
 
-    nrel_service.all_by_zip_code(params[:zip_code])
-    
+    request = nrel_service.all_by_zip_code(params[:zip_code])
     # request = Faraday.get('https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest') do |faraday|
     #   faraday.params['api_key'] = ENV['nrel_api_key']
     #   faraday.params['format'] = 'json'
     #   faraday.params['radius'] = '6'
-    #   faraday.params['format'] = 'json'
     #   faraday.params['fuel_type'] = 'ELEC,LPG'
     #   faraday.params['limit'] = 10
     #   faraday.params['location'] = params[:zip_code]

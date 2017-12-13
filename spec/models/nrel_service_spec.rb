@@ -10,7 +10,7 @@ describe NrelService do
     context "#all_by_zip_code" do
       it "searches for stations by zip_code and returns 10 stations within 6 miles" do
         VCR.use_cassette('NrelService#all_by_zip_code') do
-          request = subject.all_by_zip_code
+          request = subject.all_by_zip_code("80207")
           stations = JSON.parse(request.body)
           station = stations.first
 

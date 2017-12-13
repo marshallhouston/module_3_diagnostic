@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/nearest?api_key=liN2KeVl9tkuoZBViRgcLqxEUN6zMjZcD6QWnoiD&format=json&fuel_type=ELEC,LPG&limit=10&location=80207&radius=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.13.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 13 Dec 2017 18:07:43 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Last-Modified:
+      - Wed, 27 Sep 2017 15:05:02 GMT
+      Etag:
+      - W/"f369d51a057bbf9a64cbf594bd6c881d"
+      X-Amz-Error-Code:
+      - NoSuchKey
+      X-Amz-Error-Message:
+      - The specified key does not exist.
+      X-Amz-Error-Detail-Key:
+      - nearest
+      X-Amz-Request-Id:
+      - 84F429AF86AA24E4
+      X-Amz-Id-2:
+      - vivDAu12eBwPiftc3bneUPN/oxWIjikS0GDZ5w3o5i0l7moPUcRkfxoL7nQqeQIMOCYwfeEwfnM=
+      X-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n
+        \   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1\">\n    <title>\n        Page
+        Not Found \n        |\n      NREL: Developer Network\n    </title>\n\n    <link
+        rel=\"canonical\" href=\"https://developer.nrel.gov/404.html\" />\n    <script>\n
+        \     if(window.location.href.indexOf('nrel.github.io') !== -1) {\n        window.location.href
+        = 'https://developer.nrel.gov/404.html';\n      }\n    </script>\n\n    <link
+        href=\"assets/stylesheets/all-b9300c44.css\" rel=\"stylesheet\" />\n\n    <!--[if
+        lt IE 9]>\n      <script src=\"assets/javascripts/ie_lt_9-9f2d2b9c.js\"></script>\n
+        \   <![endif]-->\n    <script src=\"assets/javascripts/all-7e1fc9b1.js\"></script>\n
+        \   <script>\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n
+        \ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n
+        \ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n
+        \ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\n
+        \ ga('create', '', 'auto');\n  ga('send', 'pageview');\n</script>\n\n  </head>\n
+        \ <body class=\"x404\">\n    <div class=\"container\">\n  <header>\n    <map
+        name=\"header_map\">\n        <area shape=\"rect\" coords=\"0,0,840,58\" href=\"/\"
+        alt=\"Developer Network\" />\n      <area shape=\"rect\" coords=\"840,0,1000,58\"
+        href=\"http://www.nrel.gov/\" alt=\"NREL\" />\n    </map>\n    <img src=\"assets/images/nrel/header-1bfbcb1a.png\"
+        alt=\"NREL Developer Network\" usemap=\"#header_map\" width=\"1000\" height=\"58\"
+        />\n  </header>\n  <nav class=\"navbar navbar-default\">\n    <ul class=\"nav
+        navbar-nav\">\n      <li class=\"nav-home \"><a href=\"/\">Home</a></li>\n
+        \     <li class=\"nav-documentation \"><a href=\"/docs\">Documentation</a></li>\n
+        \     <li class=\"nav-community \"><a href=\"/community\">Community</a></li>\n
+        \   </ul>\n  </nav>\n\n  \n\n    <div class=\"text-center\" style=\"margin:
+        80px auto;\">\n  <h1>Page Not Found</h1>\n  <p>Try checking the <a href=\"/\">homepage</a>
+        or <a href=\"/contact/\">contact us</a>.</p>\n</div>\n\n    <div style=\"text-align:
+        center; font-style: italic; padding: 3em 0.5em 0em 0.5em;\">\n  <a href=\"https://github.com/NREL/developer.nrel.gov/blob/master/source/404.html.md\">Help
+        Improve this Content</a>\n</div>\n\n      <footer class=\"container-fluid\">\n
+        \   <div align=\"center\"><img src=\"assets/images/nrel/foot_nrelis-8e56f120.gif\"
+        alt=\"NREL is a national laboratory of the U.S. Department of Energy, Office
+        of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable
+        Energy, LLC.\" usemap=\"#footer_map\" /></div>\n\n    <map name=\"footer_map\"
+        id=\"footer_map\">\n      <area shape=\"rect\" coords=\"27,7,61,20\" href=\"http://www.nrel.gov/\"
+        alt=\"NREL\" />\n      <area shape=\"rect\" coords=\"238,7,399,19\" href=\"http://www.energy.gov/\"
+        alt=\"U.S. Department of Energy\" />\n      <area shape=\"rect\" coords=\"405,7,697,21\"
+        href=\"http://www.eere.energy.gov/\" alt=\"Office of Energy Efficiency and
+        Renewable Energy\" />\n      <area shape=\"rect\" coords=\"307,21,524,35\"
+        href=\"http://www.allianceforsustainableenergy.org/\" alt=\"Alliance for Sustainable
+        Energy, LLC\" />\n    </map>\n\n    <p><a href=\"/contact\">Need Help?</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href=\"http://www.nrel.gov/security.html\">Security &amp; Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href=\"http://www.nrel.gov/disclaimer.html\">Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+        href=\"http://www.nrel.gov/\">NREL Home</a></p>\n  </footer>\n</div>\n\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 18:07:43 GMT
+recorded_with: VCR 4.0.0
