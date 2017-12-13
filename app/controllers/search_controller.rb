@@ -14,7 +14,11 @@ class SearchController < ApplicationController
     parsed_response = JSON.parse(request.body, symbolize_headers: true)
     parsed_stations = parsed_response['fuel_stations']
 
-    @stations = parsed_stations
+    stations = parsed_stations.map do |raw_station|
+      Station.new(raw_station)
+    end
+
+    @stations = stations
   end
 
 end
