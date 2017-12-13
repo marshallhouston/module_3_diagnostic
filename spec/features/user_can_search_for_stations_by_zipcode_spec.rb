@@ -13,14 +13,18 @@ describe "User can search by zip_code" do
         # And I click "Locate"
         click_on "Locate"
         # Then I should be on page "/search" with parameters visible in the url
-        expect(current_path).to eq("/search")
+
+        expect(current_path).to eq("/search?location=80203")
+
         # Then I should see a list of the 10 closest stations within 6 miles sorted by distance
         within ".stations" do
           expect( all('.station-name').count ).to eq(10)
         end
 
         # And the stations should be limited to Electric and Propane
+
         # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
+
       end
     end
   end
